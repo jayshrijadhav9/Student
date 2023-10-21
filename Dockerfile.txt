@@ -1,0 +1,5 @@
+FROM gcc:latest
+WORKDIR /home/ubuntu/app
+COPY . .
+RUN g++ --o main main.cpp
+CMD ["./main"]
